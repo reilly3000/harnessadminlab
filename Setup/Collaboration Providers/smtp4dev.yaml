@@ -1,0 +1,19 @@
+harnessApiVersion: '1.0'
+type: SMTP
+fromAddress: harness.training@example.com
+host: 10.142.0.35
+port: 2525
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+useSSL: false
+username: admin
