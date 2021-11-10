@@ -23,6 +23,6 @@ serviceTargetPort: 80
 # Both are added to the container environment in podSpec as envFrom source.
 env:
   config:
-    key1: value1
+    key1: value3
   secrets:
     key2: value2
